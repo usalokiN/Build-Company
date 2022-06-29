@@ -1,0 +1,62 @@
+.main-banner {
+
+
+  .slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.34);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.34);
+    border-left: 1px solid #F6F66A ;
+    &__photo{
+
+      padding-top: 10em;
+      height: 300px;
+      flex-basis: 100%; //to stretch to the full width of the slider
+      background: url(../img/slider.jpg) center (bottom/cover) no-repeat;
+      p {
+        display: inline-block;
+        color: $white;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        padding: 10px;
+        left: 20px;
+        bottom: 10px;
+        font-size: 20px;
+      }
+
+
+
+    }
+    &__arrow-left {
+      background: url(../img/alb.png) center (center/cover) no-repeat;
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      left: 20px;
+      cursor: pointer;
+    }
+    &__arrow-right{
+      background: url(../img/arb.png) center (center/cover) no-repeat;
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      right: 20px;
+      cursor: pointer;
+    }
+    }
+  .slider__switch{
+    text-align: center;
+    margin-top: 10px;
+    span{
+      display: inline-block;
+      width: 10px;
+      height: 10px;border-radius: 100%;border: 2px solid $cayne;
+      cursor:pointer;
+    }
+    &_active{
+      background: #efc01a;
+
+    }
+  }
+  }

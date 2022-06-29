@@ -1,0 +1,25 @@
+.gallery {
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .arrow-left {
+      width: 75px;
+      height: 50px;
+      background: url(../img/arrow_left.png) center (center/cover) no-repeat;
+    }
+    .photo{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+    }
+    .arrow-right {
+      width: 75px;
+      height: 50px;
+      cursor: pointer;
+      background: url(../img/arrow_right.png) center (center/cover) no-repeat;
+    }
+  }
+}

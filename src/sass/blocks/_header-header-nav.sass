@@ -1,0 +1,103 @@
+@import "../variables/_color"
+header
+    background: #000000
+    padding: 8px 0
+    margin-bottom: 5px
+
+    .wrapper
+        border-top: 1px solid #dfdfdf
+        border-bottom: 1px solid #dfdfdf
+        align-items: center
+        justify-content: center
+        > div
+            display: flex
+            align-items: center
+            height: 70px
+            max-width: 80%
+            margin: 0 auto
+            .header__descr
+                flex-basis: 40%
+                color: #a9abaa
+                font-size: 13px
+                justify-content: start
+.container
+    margin: 0 auto
+    width: 80%
+    .header-nav
+        border-bottom: 0.5px solid #f6f66a
+        display: flex
+        align-items: center
+        position: relative
+        > ul
+            display: flex
+            padding: 0
+            margin: 0
+            height: 50px
+            > li
+                display: flex
+                align-items: center
+                list-style: none
+                padding: 0 20px 0
+                position: relative
+                text-decoration: none
+                font-size: 1.25vw
+                transition: 3s all ease-out
+
+        :hover ul
+            transition: 3s all ease-out
+            display: block
+
+        &__submenu
+            display: none
+            position: absolute
+            color: #a9abaa
+            background: rgba(0,0,0,0.9)
+            width: 200px
+            padding: 10px
+            z-index: 1
+            border-right: 10px
+            box-shadow: 3px 2px 4px rgba(0,0,0,0.5)
+            top: 40px
+            list-style: none
+            transition: 3s all ease-out
+
+            > li
+
+                cursor: pointer
+                color: $white
+                padding: 5px
+                transition: 0.5s all ease-in
+                &:hover
+                    text-align: center
+                    color: #000000
+                    background: $white
+                    border-radius: 15px
+        form
+            position: relative
+            font-size: large
+
+            i
+                position: absolute
+                top: 0.3rem
+                right: 30px
+
+        input
+            border-radius: 8px
+            border: 0.5px solid #cdcdcd
+            outline: 0
+            padding: 5px
+            margin-bottom: 10px
+        button
+            border: none
+            background: none
+            outline: 0
+            cursor: pointer
+        &__img
+            position: absolute
+            right: 20px
+            bottom: -18px
+
+
+
+            
+        

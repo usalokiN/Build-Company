@@ -1,0 +1,96 @@
+footer {
+  background: #000000;
+  border-top: 5px solid #F6F66A;
+
+  .footer-uppercontent {
+    display: flex;
+    &__logo {
+      max-width: 265px;
+      height: 111px;
+      margin: 3em;
+      img {
+        width: 100%;
+      }
+    }
+    &__block{
+      width: 30%;
+      align-items: center;
+      justify-content: center;
+      .title{
+        color: $white;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 25px;
+
+
+
+
+      }
+      ul {
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        flex-direction: column;
+
+        li{
+          color:$white;
+          list-style: none;
+          font-size: 18px;
+          padding: 5px 0 5px 3px;
+          transition: 0.55s all;
+          cursor: pointer;
+
+          &:hover{
+            color: #fdfd00;
+            font-size: 20px;
+            transition: 0.1s all;
+
+
+          }
+
+        }
+        .footer-contact__active{
+          color: #fdfd00;
+          transition: 3ms all;
+          &:hover{
+            color:$green;
+          }
+        }
+
+      }
+    }
+  }
+  .footer-copy{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__links{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color:white;
+      i {
+        font-weight: bold;
+        font-size: larger;
+        margin: 0 15px 15px 0;
+        transition: 0.3s all ease-out;
+      }
+      .twitter:hover {
+        color: #13a2b2;
+      }
+      .youtube:hover{
+        color: firebrick;
+      }
+      .facebook:hover{
+        color: #0032da;
+      }
+      .instagram:hover{
+        color: #4216c0;
+      }
+    }
+  }
+  .copyright {
+    color: $white ;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,138 @@
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  &__left-side{
+    flex-basis: 27%;
+
+    article {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 40px 0;
+      img{
+        border-radius: 100%;
+        height: 70px;
+        margin-right: 5px;
+      }
+      p {
+        flex-basis: 70%;
+      }
+
+
+    }
+
+  }
+  aside {
+    background: url('../img/aside.jpg') center (top/cover) no-repeat;
+    height: 200px;
+    position: relative;
+    p {
+      position: absolute;
+      left: 10%;
+      bottom: 10px;
+      color: #fff;
+      background: rgba(0,0,0,0.7);
+      padding: 10%;
+      margin: 0;
+    }
+  }
+  &__right-side{
+    display: flex;
+  justify-content: center;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+
+    .wrap-title{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      flex-basis: 30%;
+      position: relative;
+      :hover &__block-icons{
+        display: inline-block;
+
+      }
+
+      &__block {
+        margin: 7px;
+
+        &-icons {
+
+          position: absolute;
+          padding: 5px;
+          display: none;
+
+
+          span {
+            display: inline-block;
+            font-size: 18px;
+            color: #919191;
+            border-radius: 100%;
+            background: rgb(255, 255, 255, 0.8);
+            padding: 5px 8px;
+            border: 1px solid;
+            cursor: pointer;
+            transition: 0.1s all ease-in;
+
+            &:hover {
+              background: $green;
+            }
+          }
+
+        }
+
+
+        p {
+          font-size: 18px;
+
+          &:nth-of-type(1) {
+            color: #955858;
+            font-weight: bold;
+          }
+
+          &:nth-of-type(2) {
+            color: #8d8d8d;
+          }
+        }
+
+
+        img {
+          width: 100%;
+        }
+
+        .bottom {
+          border-top: 1px solid #c9c9c9;
+          border-bottom: 1px solid #c9c9c9;
+          display: flex;
+          justify-content: space-between;
+          padding: 7px;
+          font-size: 14px;
+          a {
+            color:#83b85c;
+            text-decoration: none;
+          }
+        }
+      }
+      }
+    .pagination {
+      text-align: center;
+      span{
+        margin: 3px;
+        display: inline-block;
+        background: #13a2b2;
+        color: #fff;
+        width: 20px;
+        padding: 3px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bolder;
+        transition: 0.3s all ease-out;
+        &:hover{
+          background: $green;
+        }
+      }}
+  }
+
+}
